@@ -11,8 +11,8 @@ var grade ="";
 var total = parseFloat(a)+ parseFloat(b)+ parseFloat(c)+parseFloat(d)+parseFloat(e)+parseFloat(f);
 alert(total);
 
-let per= (total/600) * 100;
-alert(per);
+var per= (total/600) * 100;
+alert(Math.floor(per) );
 
 if(per <= 100 && per >=80){
     grade='A';
@@ -26,12 +26,12 @@ if(per <= 100 && per >=80){
 }else{
     grade = 'F'
 }
-var gp =  90 / 20 -2;
+var gp =  per / 20 -1;
 if(per >=50){
   document.getElementById('showdata').innerHTML = `your total is ${total} and percentage is ${per}%.<br> your grade is ${grade} <br><br>your CGPA is ${gp} passed <br> CONGRATULATIONS`
 }
 else{
-    document.getElementById('showdata').innerHTML = `your total is ${total} and percentage is ${per}%.<br> your grade is ${grade} and your CGPA is ${gp} failed`
+    document.getElementById('showdata').innerHTML = `your total is ${total} and percentage is ${per}%.<br> your grade is ${grade}<br><br> and your CGPA is ${gp} failed`
 
 
 }
