@@ -28,10 +28,10 @@ if(per <= 100 && per >=80){
 }
 var gp =  90 / 20 -2;
 if(per >=50){
-  document.getElementById('showdata').innerHTML = `your total is ${total} and percentage is ${per}%.<br> your grade is ${grade} <br><br>your CGPA is ${gp} pass <br> CONGRATULATIONA`
+  document.getElementById('showdata').innerHTML = `your total is ${total} and percentage is ${per}%.<br> your grade is ${grade} <br><br>your CGPA is ${gp} passed <br> CONGRATULATIONS`
 }
 else{
-    document.getElementById('showdata').innerHTML = `your total is ${total} and percentage is ${per}%.<br> your grade is ${grade} and your CGPA is ${gp} fail`
+    document.getElementById('showdata').innerHTML = `your total is ${total} and percentage is ${per}%.<br> your grade is ${grade} and your CGPA is ${gp} failed`
 
 
 }
