@@ -7,6 +7,16 @@ var  e = document.getElementById("subMarks5").value;
 var f = document.getElementById("subMarks6").value;
 var grade ="";
 
+if(a >100 || b>100 || c>100 || d>100 || e>100 || f>100)
+{
+    alert("please enter marks in range of 100");
+}
+
+else if(a =="" || b=="" || c=="" || d=="" || e=="" || f==""){
+    alert("please enter subject marks")
+}
+
+else{
 
 var total = parseFloat(a)+ parseFloat(b)+ parseFloat(c)+parseFloat(d)+parseFloat(e)+parseFloat(f);
 alert(total);
@@ -39,7 +49,7 @@ else{
 
 
 
-
+}   
 
 
 
